@@ -4,6 +4,7 @@ import Proyectos from './componentes/Proyectos'
 import Educacion from './componentes/Educacion'
 import SobreMi from './componentes/SobreMi'
 import Footer from './componentes/Footer'
+import Contacto from './componentes/Contacto'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Proyectos />
         <Educacion />
         <SobreMi />
+        <Contacto />
       </main>
       <Footer />
     </div>

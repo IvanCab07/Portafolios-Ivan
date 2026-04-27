@@ -1,7 +1,7 @@
 export default function Navbar() {
   const botonclase = `font-mono text-[10px] px-4 py-2 rounded
-            border border-transparent text-muted 
-            hover:border-accent hover:text-accent hover:bg-accent/5'`
+            border border-muted text-muted 
+            hover:border-accent hover:text-accent hover:bg-accent/5 transform scale-100 hover:scale-[1.05] transition-all'`
 
   return (
     <nav className={`sticky top-0 z-50 bg-bg flex justify-center gap-1 px-6 py-3`}>
