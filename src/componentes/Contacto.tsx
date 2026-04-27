@@ -5,10 +5,8 @@ function cajaformulario() {
     <div className="flex flex-col justify-center">
       <h3 className="font-pixel text-accent mb-4">Hablemos</h3>
       <p className="text-muted mb-6">
-        Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-        Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-        Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-        Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
+        Estoy siempre en busca de nuevos proyectos y desafíos. Si te interesa mi perfil o querés consultar
+        algo sobre mi trabajo, completá el formulario y te respondo lo antes posible.
       </p>
     </div>
   )
