@@ -11,20 +11,20 @@ function cajaformulario() {
     </div>
   )
   const formulario = (
-  <div className="bg-card border border-border rounded-xl p-6 flex flex-col gap-3">
+  <form className="bg-card border border-border rounded-xl p-6 flex flex-col gap-3">
     <div className="grid grid-cols-2 gap-3">
       <div className="flex flex-col gap-1">
         <label className={labelClass}>Nombre</label>
-        <input type="text" placeholder="Tu nombre" className={placeholderClass} />
+        <input type="text" required placeholder="Tu nombre" className={placeholderClass} />
       </div>
       <div className="flex flex-col gap-1">
         <label className={labelClass}>Apellido</label>
-        <input type="text" placeholder="Tu apellido" className={placeholderClass} />
+        <input type="text" required placeholder="Tu apellido" className={placeholderClass} />
       </div>
     </div>
     <div className="flex flex-col gap-1">
       <label className={labelClass}>Email</label>
-      <input type="email" placeholder="correo@gmail.com" className={placeholderClass} />
+      <input type="email" required placeholder="correo@gmail.com" className={placeholderClass} />
     </div>
     <div className="flex flex-col gap-1">
       <label className={labelClass}>Teléfono</label>
@@ -39,7 +39,7 @@ function cajaformulario() {
             transform scale-100 hover:scale-[0.95] transition-all`">
       Enviar mensaje
     </button>
-  </div>
+  </form>
 )
 
     return (
