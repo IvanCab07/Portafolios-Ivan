@@ -5,21 +5,21 @@ export default function Navbar() {
 
   return (
     <nav className={`sticky top-0 z-50 bg-bg flex justify-center gap-1 px-6 py-3`}>
-        <button className={botonclase}>
+        <a className={botonclase} href="#inicio">
           INICIO
-        </button>
-        <button className={botonclase}>
+        </a>
+        <a className={botonclase} href="#proyectos">
           PROYECTOS
-        </button>
-        <button className={botonclase}>
+        </a>
+        <a className={botonclase} href="#educacion">
           EDUCACION
-        </button>
-        <button className={botonclase}>
+        </a>
+        <a className={botonclase} href="#sobre-mi">
           SOBRE MÍ
-        </button>
-        <button className={botonclase}>
+        </a>
+        <a className={botonclase} href="#contacto">
           CONTACTO
-        </button>
+        </a>
     </nav>
   )
 }

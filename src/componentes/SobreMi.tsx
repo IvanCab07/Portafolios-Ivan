@@ -50,7 +50,7 @@ const botonSVG = () => {
 
 export default function SobreMi() {
   return (
-    <section className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+    <section id="sobre-mi" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
       <h2 className="font-pixel text-accent text-center mb-16">
         Sobre mí
       </h2>

@@ -48,7 +48,7 @@ function Edu_caja({ caja }: { caja: Edu_info }) {
 
 export default function Educacion() {
   return (
-    <section className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+    <section id="educacion" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
       <h2 className="font-pixel text-accent text-center mb-16">
         Educación
       </h2>

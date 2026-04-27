@@ -1,7 +1,7 @@
 export default function Inicio() {
   const hoverboton = ` hover:bg-accent hover:border-accent hover:text-black`
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
 
       <div className="absolute inset-0 bg-bg overflow-hidden">
         <div className="absolute inset-0 z-10 bg-[url('./assets/blender.png')] bg-cover bg-center"/>
