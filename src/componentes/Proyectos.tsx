@@ -83,12 +83,9 @@ export default function Proyectos() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {ProjectoTarjeta({ projectos: PROJECTOS[0] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[1] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[2] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[3] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[4] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[5] })}
+        {PROJECTOS.map((proyecto) => (
+          <ProjectoTarjeta key={proyecto.id} projectos={proyecto} />
+        ))}
       </div>
     </section>
   )
