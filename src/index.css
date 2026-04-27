@@ -2,5 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 8px currentColor; }
+}
 
+@keyframes glow-blink {
+  50% { opacity: 0; }
+  0%, 100% { text-shadow: 0 0 8px currentColor; }
+}
+
+.glow  { animation: glow 2s ease-in-out infinite; }
+.glow-blink { animation: glow-blink 2s ease-in-out infinite; }
 

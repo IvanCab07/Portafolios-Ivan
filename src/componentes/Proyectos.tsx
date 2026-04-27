@@ -46,8 +46,8 @@ const PROJECTOS: Projecto[] = [
 
 function ProjectoTarjeta({ projectos }: { projectos: Projecto }) {
   return (
-    <article className="bg-card border border-border rounded-xl overflow-hidden
-                 hover:border-accent/40">
+    <article className="bg-card border border-border rounded-xl overflow-hidden transform scale-100 hover:scale-[1.05] transition-all>
+                 hover:border-accent/40 ">
                   
       <div className="w-full aspect-video bg-surface border-b border-border text-muted overflow-hidden">
 
@@ -77,18 +77,15 @@ function ProjectoTarjeta({ projectos }: { projectos: Projecto }) {
 
 export default function Proyectos() {
   return (
-    <section className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
-      <h2 className="font-pixel text-accent text-center mb-14">
+    <section id="proyectos" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+      <h2 className="font-pixel text-accent text-center mb-14 glow">
         Proyectos
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {ProjectoTarjeta({ projectos: PROJECTOS[0] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[1] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[2] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[3] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[4] })}
-        {ProjectoTarjeta({ projectos: PROJECTOS[5] })}
+        {PROJECTOS.map((proyecto) => (
+          <ProjectoTarjeta key={proyecto.id} projectos={proyecto} />
+        ))}
       </div>
     </section>
   )

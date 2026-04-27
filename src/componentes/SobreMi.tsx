@@ -1,10 +1,8 @@
-const Info = `Esto sería un texto sobre mí. Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo.
+const titulo = `Desarrollador de Software | Estudiante Técnico`
 
-Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo
-Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo Ejemplo.`
+const info = `Finalizando mi etapa en la educación técnica argentina (E.T. N°7), me defino como un desarrollador con mentalidad Full Stack y una fuerte base lógica. Mi enfoque actual está en el desarrollo web, aunque mi motor principal es la creación de videojuegos, disciplina que estudio de forma autodidacta.
+
+Me motiva el aprendizaje constante y la resolución de problemas técnicos complejos. Próximamente buscaré expandir mi formación y experiencia profesional en Italia, con el objetivo de integrarme en la industria del software y los videojuegos a nivel global.`
 
 const InstagramIcono = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -35,13 +33,13 @@ const botonSVG = () => {
 
   return (
     <div className="flex gap-4 mt-8">
-      <a className={claseboton}>
+      <a href="Https://www.instagram.com/ivancab07?igsh=bWg2YTBzbmNxZ2t0" className={claseboton}>
         <Intragram />
       </a>
-      <a className={claseboton}>
+      <a href="https://github.com/ivancab07" className={claseboton}>
         <GitHub />
       </a>
-      <a className={claseboton}>
+      <a href="https://www.linkedin.com/" className={claseboton}>
         <LinkedIn />
       </a>
     </div>
@@ -50,16 +48,19 @@ const botonSVG = () => {
 
 export default function SobreMi() {
   return (
-    <section className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
-      <h2 className="font-pixel text-accent text-center mb-16">
+    <section id="sobre-mi" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+      <h2 className="font-pixel text-accent text-center mb-16 glow">
         Sobre mí
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
-        <div>         
-            <p className="text-muted mb-4">
-              {Info}
-            </p>
+        <div>
+          <h3 className="font-pixel text-accent mb-4">
+            {titulo}
+          </h3>         
+          <p className="text-muted mb-4">
+            {info}
+          </p>
           {botonSVG()}
         </div>
 

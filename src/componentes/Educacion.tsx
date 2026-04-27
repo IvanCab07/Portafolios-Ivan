@@ -1,19 +1,27 @@
+import logoJoseHernadez from '../assets/logoJoseHernandez.png'
+
 interface Edu_info {
   id: number
   titulo: string
   descripcion: string
+  imagen: string
+  url: string
 }
 
 const EDU_INFO: Edu_info[] = [
   {
     id: 1,
-    titulo: 'Estudios Secundarios',
-    descripcion:'Acá iría donde fui al secundario. Por ejemplo: Escuela Técnica N° 7 "José Hernández", tecnicatura en Programación. Actualmente cursando el último año.',
+    titulo: 'E.E.S.T. N° 7 "José Hernández"',
+    descripcion:'Actualmente cursando el último año de la Tecnicatura en Programación. Mi formación incluye una base sólida en lógica de programación, algoritmos, bases de datos y desarrollo de software, complementada con prácticas profesionalizantes que me permiten aplicar conocimientos técnicos en entornos reales.',
+    imagen: logoJoseHernadez,
+    url: 'https://www.tecnica7.edu.ar/',
   },
   {
     id: 2,
     titulo: 'Cursos',
     descripcion:'Acá irían los cursos que realize.',
+    imagen: '',
+    url: '#',
   },
 ]
 
@@ -26,15 +34,18 @@ function Edu_caja({ caja }: { caja: Edu_info }) {
       <p className="text-muted mb-6 text-[12px]">
         {caja.descripcion}
       </p>
-        <a className="self-start font-mono text-[11px] px-5 py-2.5 border border-border bg-surface 
-                    text-[#d4d4d4] rounded hover:bg-accent hover:border-accent hover:text-black">
+        <a href={caja.url} className="self-start font-mono text-[11px] px-5 py-2.5 border border-border bg-surface 
+                    text-[#d4d4d4] rounded hover:bg-accent hover:border-accent hover:text-black
+                      transform scale-100 hover:scale-[1.05] transition-all">
           REDERIGIR
         </a>
     </div>
   )
 
   const imagen = (
-    <div className="w-full aspect-video bg-card border border-border rounded-xl">
+    <div className="w-full aspect-video bg-card border border-border rounded-xl 
+                    transform scale-100 hover:scale-[1.05] transition-all hover:border-accent/40">
+      {caja.imagen && <img src={caja.imagen} className="w-full h-full object-contain rounded-xl " />}
     </div>
   )
 
@@ -48,8 +59,8 @@ function Edu_caja({ caja }: { caja: Edu_info }) {
 
 export default function Educacion() {
   return (
-    <section className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
-      <h2 className="font-pixel text-accent text-center mb-16">
+    <section id="educacion" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+      <h2 className="font-pixel text-accent text-center mb-16 glow">
         Educación
       </h2>
       {Edu_caja({ caja: EDU_INFO[0] })}
