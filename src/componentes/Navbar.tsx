@@ -4,9 +4,7 @@ export default function Navbar() {
             hover:border-accent hover:text-accent hover:bg-accent/5'`
 
   return (
-    <nav
-      className={`flex justify-center gap-1 px-6 py-3`}
-    >
+    <nav className={`sticky top-0 z-50 bg-bg flex justify-center gap-1 px-6 py-3`}>
         <button className={botonclase}>
           INICIO
         </button>
@@ -18,6 +16,9 @@ export default function Navbar() {
         </button>
         <button className={botonclase}>
           SOBRE MÍ
+        </button>
+        <button className={botonclase}>
+          CONTACTO
         </button>
     </nav>
   )
