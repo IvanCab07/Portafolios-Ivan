@@ -21,7 +21,7 @@ export default function Inicio() {
         </div>
 
         <div className="flex gap-3 justify-center">
-          <a href="https://www.linkedin.com/in/ivan-caballero/" className={`font-mono text-[11px] px-5 py-2.5
+          <a href="https://www.linkedin.com/" className={`font-mono text-[11px] px-5 py-2.5
                        border border-border bg-surface text-[#d4d4d4] rounded${hoverboton}`}
           >
             LinkedIn

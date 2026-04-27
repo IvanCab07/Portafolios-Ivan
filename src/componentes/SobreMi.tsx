@@ -33,13 +33,13 @@ const botonSVG = () => {
 
   return (
     <div className="flex gap-4 mt-8">
-      <a className={claseboton}>
+      <a href="Https://www.instagram.com/ivancab07?igsh=bWg2YTBzbmNxZ2t0" className={claseboton}>
         <Intragram />
       </a>
-      <a className={claseboton}>
+      <a href="https://github.com/ivancab07" className={claseboton}>
         <GitHub />
       </a>
-      <a className={claseboton}>
+      <a href="https://www.linkedin.com/" className={claseboton}>
         <LinkedIn />
       </a>
     </div>
