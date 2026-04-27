@@ -46,8 +46,8 @@ const PROJECTOS: Projecto[] = [
 
 function ProjectoTarjeta({ projectos }: { projectos: Projecto }) {
   return (
-    <article className="bg-card border border-border rounded-xl overflow-hidden
-                 hover:border-accent/40">
+    <article className="bg-card border border-border rounded-xl overflow-hidden transform scale-100 hover:scale-[1.05] transition-all>
+                 hover:border-accent/40 ">
                   
       <div className="w-full aspect-video bg-surface border-b border-border text-muted overflow-hidden">
 
