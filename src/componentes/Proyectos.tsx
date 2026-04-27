@@ -78,7 +78,7 @@ function ProjectoTarjeta({ projectos }: { projectos: Projecto }) {
 export default function Proyectos() {
   return (
     <section id="proyectos" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
-      <h2 className="font-pixel text-accent text-center mb-14">
+      <h2 className="font-pixel text-accent text-center mb-14 glow">
         Proyectos
       </h2>
 
