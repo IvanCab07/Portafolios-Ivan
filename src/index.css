@@ -18,3 +18,21 @@ html, body {
   @apply scroll-smooth;
 }
 
+@layer base {
+  ::-webkit-scrollbar {
+    @apply w-3 border-none;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent/80 rounded-lg;
+  }
+  body {
+    cursor: url('assets/cursorLima.png'), auto;
+  }
+  a, button,article,
+  .cursor-pointer {
+    cursor: url('assets/manoLima.png'), pointer !important;
+  }
+}
