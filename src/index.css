@@ -14,3 +14,7 @@
 .glow  { animation: glow 2s ease-in-out infinite; }
 .glow-blink { animation: glow-blink 2s ease-in-out infinite; }
 
+html, body {
+  @apply scroll-smooth;
+}
+
