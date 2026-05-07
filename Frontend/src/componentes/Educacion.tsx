@@ -1,0 +1,70 @@
+import PixelLogo from '../assets/PixelLogoJoseHernadez.png'
+
+interface Edu_info {
+  id: number
+  titulo: string
+  descripcion: string
+  imagen: string
+  url: string
+}
+
+const EDU_INFO: Edu_info[] = [
+  {
+    id: 1,
+    titulo: 'E.E.S.T. N° 7 "José Hernández"',
+    descripcion:'Actualmente cursando el último año de la Tecnicatura en Programación. Mi formación incluye una base sólida en lógica de programación, algoritmos, bases de datos y desarrollo de software, complementada con prácticas profesionalizantes que me permiten aplicar conocimientos técnicos en entornos reales.',
+    imagen: PixelLogo,
+    url: 'https://www.tecnica7.edu.ar/',
+  },
+  {
+    id: 2,
+    titulo: 'Cursos',
+    descripcion:'Acá irían los cursos que realize.',
+    imagen: '',
+    url: '#',
+  },
+]
+
+function Edu_caja({ caja }: { caja: Edu_info }) {
+  const texto = (
+    <div className="flex flex-col justify-center">
+      <h3 className="font-pixel text-accent mb-4">
+        {caja.titulo}
+      </h3>
+      <p className="text-muted mb-6 text-[12px]">
+        {caja.descripcion}
+      </p>
+        <a href={caja.url} className="self-start font-mono text-[11px] px-5 py-2.5 border border-border bg-surface 
+                    text-[#d4d4d4] rounded hover:bg-accent hover:border-accent hover:text-black
+                      transform scale-100 hover:scale-[1.05] transition-all">
+          REDERIGIR
+        </a>
+    </div>
+  )
+
+  const imagen = (
+    <div className="w-full aspect-video bg-card border border-border rounded-xl 
+                    transform scale-100 hover:scale-[1.05] transition-all hover:border-accent/40">
+      {caja.imagen && <img src={caja.imagen} className="w-auto h-auto object-contain rounded-xl " />}
+    </div>
+  )
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-5">
+      {texto}
+      {imagen}
+    </div>
+  )
+}
+
+export default function Educacion() {
+  return (
+    <section id="educacion" className="pt-10 pb-5 px-6 max-w-5xl mx-auto">
+      <h2 className="font-pixel text-accent text-center mb-16 glow">
+        Educación
+      </h2>
+      {Edu_caja({ caja: EDU_INFO[0] })}
+      {/* {Edu_caja({ caja: EDU_INFO[1] })} */}
+    </section>
+  )
+}
